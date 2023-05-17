@@ -39,5 +39,7 @@ When the player adjusts the settings, the following image appears. It displays a
 #### About the Code
 Most of the code controlling the game is within the 'GameManager' script of the Scripts folder. The methods that play the randomized sequence are asynchronous task types such that they could be cancelled with cancellation token sources. The game data is organized so that a random list of strings { "a", "b", "c", "d" } is assembled with a count corresponding to the level, and then those strings determine which button fires. The user is to tap on the buttons which add the correct string to a list which is compared to the randomly generated one at runtime.  
 
+### Contact Me
+You can reach me at my email: awgiuffre@gmail.com
 </details>
 
