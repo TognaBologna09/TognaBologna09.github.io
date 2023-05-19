@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GiuffreGaming Webpage</title>
-</head>
+
   
+  <!-- This is how you would write comments--> 
+
+<head> 
+  <title>GiuffreGaming Webpage</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+</head>
+ 
 <body>
-  This webpage provides documentation for my released games. Enjoy!
-  <select>
-    <option value ="Melody Mockingbird">Option 1</option>
-  </select>
-</body>
+  <h1>GiuffreGaming</h1>
+  <main>
+    <select id="myDropdown">
+      <option value="Melody Mockingbird">Option 1</option>
+      
+    </select>
+    
+    <div id="Melody Mockingbird" class="hidden">
+      <!-- Content for Option 1 -->
+      <p>This is content for Option 1.</p>
+    </div>
+
+    <script>
+      var dropdown = document.getElementById("myDropdown");
+
+      dropdown.addEventListener("change", function() 
+      {
+        var selectedOption = dropdown.value;
+
+        // Hide all content divs
+        var contentDivs = document.querySelectorAll("[id$='Content']");
+        for (var i = 0; i < contentDivs.length; i++) 
+        {
+          contentDivs[i].classList.add("hidden");
+        }
+
+        // Show the selected content div
+        var selectedContent = document.getElementById(selectedOption + "Content");
+        if (selectedContent) 
+        {
+          selectedContent.classList.remove("hidden");
+        }
+      });
+    </script>
+  </body>
 </html>
