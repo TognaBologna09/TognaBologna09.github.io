@@ -14,38 +14,37 @@
  
 <body>
   <h1>GiuffreGaming</h1>
-  <main>
-    <select id="myDropdown">
-      <option value="Melody Mockingbird">Option 1</option>
+  <select id="myDropdown">
+    <option value="Melody Mockingbird">Option 1</option>
       
-    </select>
+  </select>
     
-    <div id="Melody Mockingbird" class="hidden">
-      <!-- Content for Option 1 -->
-      <p>This is content for Option 1.</p>
-    </div>
+  <div id="Melody Mockingbird" class="hidden">
+    <!-- Content for Option 1 -->
+    <p>This is content for Option 1.</p>
+  </div>
 
-    <script>
-      var dropdown = document.getElementById("myDropdown");
+  <script>
+    var dropdown = document.getElementById("myDropdown");
 
-      dropdown.addEventListener("change", function() 
+    dropdown.addEventListener("change", function() 
+    {
+      var selectedOption = dropdown.value;
+
+      // Hide all content divs
+      var contentDivs = document.querySelectorAll("[id$='Content']");
+      for (var i = 0; i < contentDivs.length; i++) 
       {
-        var selectedOption = dropdown.value;
+        contentDivs[i].classList.add("hidden");
+      }
 
-        // Hide all content divs
-        var contentDivs = document.querySelectorAll("[id$='Content']");
-        for (var i = 0; i < contentDivs.length; i++) 
-        {
-          contentDivs[i].classList.add("hidden");
-        }
-
-        // Show the selected content div
-        var selectedContent = document.getElementById(selectedOption + "Content");
-        if (selectedContent) 
-        {
-          selectedContent.classList.remove("hidden");
-        }
-      });
-    </script>
-  </body>
+      // Show the selected content div
+      var selectedContent = document.getElementById(selectedOption + "Content");
+      if (selectedContent) 
+      {
+        selectedContent.classList.remove("hidden");
+      }
+    });
+  </script>
+</body>
 </html>
