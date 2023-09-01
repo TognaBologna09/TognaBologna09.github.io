@@ -1,0 +1,209 @@
+
+body {
+	background-color: lightgray;
+	margin: 0;
+	height: 100vh;
+	align-items: center;
+}
+h1 
+{
+	color: black;
+	font-family: Gill Sans;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+}
+h2
+{
+	font-family: Gill Sans;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+h3
+{
+	font-family: Gill Sans;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+p {
+	color: black;
+	font-family: Gill Sans;
+	font-size: 24px;
+}
+nav{
+	position: relative;
+	z-index: 100;
+}
+nav ul {
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex; /* Display the list items in a row */
+	background-color: #333;
+}
+
+nav li {
+	overflow: visible;
+	margin: 0; /* Optional: Reset margin for each list item */
+}
+
+nav a {
+	overflow: visible;
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px; /* Add spacing around the links */
+	transition: background-color 0.3s;
+}
+
+nav a:hover {
+	background-color: #555;
+}
+li {
+	color: black;
+	font-family: Gill Sans;
+	font-variant: small-caps;
+	font-size: 18px;
+	display:flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+.dropdown-content {
+	overflow: visible;
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 10em;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+li:hover .dropdown-content {
+	overflow: visible;
+	display: block;
+}
+
+.dropdown-content a {
+	overflow: visible;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	overflow: visible;
+	background-color: #555;
+	transform: translateY(20%);
+}
+.center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/*
+    Nope =(
+    margin-left: -25%;
+    margin-top: -25%;
+    */
+	/* 
+    Yep!
+    */
+	transform: translate(-50%, -50%);
+	/*
+    Not even necessary really. 
+    e.g. Height could be left out!
+    */
+	width: 40%;
+	height: 50%;
+}
+div {
+	margin: 0 auto;
+}
+*
+{
+	margin: 0 auto;
+	padding: 0 auto;
+	box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	width: 100vw;
+	height: 100vh;
+	top: 25%;
+	/*transform: translate(50%, 50%);*/
+	display: block;
+	overflow: visible;
+	position: absolute;
+	justify-content: center;
+
+	background-image: linear-gradient(black, black, black, black, black, black, black, black,black,black,black,black);
+}
+
+.sun {
+	position: absolute;
+	height: 10em;
+	width: 10em;
+	top: 15em;
+	left: 15em;
+	/*transform: translate(400%,250%);*/
+	border-radius: 50%;
+	background: rgb(253,184,19); /*url('whatever.jpg')*/
+	box-shadow: 0 0 3em rgba(253, 184, 19, 1);
+}
+
+.planet, .moon 
+{
+	position: absolute;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+	border-width: 0.1em 0.1em 0 0;
+	border-radius: 50%;
+	
+}
+
+.planet::before,.moon::before
+{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+}
+
+.earth
+{
+	top: 5em;
+	left: 5em;
+	height: 30em;
+	width: 30em;
+	animation: orbit 36.5s linear infinite;
+}
+.earth::before 
+{
+	top: 2.8em;
+	right: 2.8em;
+	width: 3em;
+	height: 3em;
+	background: rgb(40,122,184); /*url('whatever.jpg')*/
+}
+.luna
+{
+	top: 0;
+	right: 0;
+	width: 8em;
+	height: 8em;
+	animation: orbit 2.8s linear infinite;
+}
+.luna::before {
+	top: 0.8em;
+	right: 0.2em;
+	width: 1.2em;
+	height: 1.2em;
+	background: rgb(246,241,213); /*url('whatever.jpg')*/
+}
+
+@keyframes orbit {
+	
+	to 
+	{
+		transform: rotate(360deg);
+	}
+}
