@@ -1,13 +1,12 @@
 
 body {
-	background-color: lightgray;
-	margin: 0;
+	background-color: black;
 	height: 100vh;
 	align-items: center;
 }
 h1 
 {
-	color: black;
+	color: white;
 	font-family: Gill Sans;
 	font-weight: bold;
 	font-variant: small-caps;
@@ -15,21 +14,24 @@ h1
 }
 h2
 {
+	color: white;
 	font-family: Gill Sans;
 	font-weight: bold;
 	font-variant: small-caps;
 }
 h3
 {
+	color: white;
 	font-family: Gill Sans;
 	font-weight: bold;
 	font-variant: small-caps;
 }
 p {
-	color: black;
+	color: white;
 	font-family: Gill Sans;
-	font-size: 24px;
+	font-size: 1em;
 }
+
 nav{
 	position: relative;
 	z-index: 100;
@@ -116,7 +118,8 @@ li:hover .dropdown-content {
 	width: 40%;
 	height: 50%;
 }
-div {
+
+body div {
 	margin: 0 auto;
 }
 *
@@ -125,40 +128,39 @@ div {
 	padding: 0 auto;
 	box-sizing: border-box;
 }
-.container {
-	margin: 0 auto;
+/*.container {
+	text-align: center;
 	width: 100vw;
 	height: 100vh;
-	top: 25%;
+	top: 25%;*/
 	/*transform: translate(50%, 50%);*/
-	display: block;
+	/*display: block;
 	overflow: visible;
 	position: absolute;
 	justify-content: center;
 
 	background-image: linear-gradient(black, black, black, black, black, black, black, black,black,black,black,black);
-}
+}*/
 
-.sun {
+/*.sun {
 	position: absolute;
 	height: 10em;
 	width: 10em;
-	top: 15em;
-	left: 15em;
+	margin-left: auto;
+	margin-right: auto;*/
 	/*transform: translate(400%,250%);*/
-	border-radius: 50%;
-	background: rgb(253,184,19); /*url('whatever.jpg')*/
-	box-shadow: 0 0 3em rgba(253, 184, 19, 1);
+	/*border-radius: 50%;
+	background: rgb(253,184,19);*/ /*url('whatever.jpg')*/
+	/*box-shadow: 0 0 3em rgba(253, 184, 19, 1);
 }
 
-.planet, .moon 
-{
+.planet, .moon {
+	margin: auto;
 	position: absolute;
 	border-style: solid;
 	border-color: white transparent transparent transparent;
 	border-width: 0.1em 0.1em 0 0;
 	border-radius: 50%;
-	
 }
 
 .planet::before,.moon::before
@@ -170,20 +172,20 @@ div {
 
 .earth
 {
-	top: 5em;
-	left: 5em;
+	top: 15%;
+	left: 15%;
 	height: 30em;
 	width: 30em;
 	animation: orbit 36.5s linear infinite;
 }
-.earth::before 
-{
-	top: 2.8em;
-	right: 2.8em;
-	width: 3em;
-	height: 3em;
-	background: rgb(40,122,184); /*url('whatever.jpg')*/
-}
+	.earth::before {
+		top: 2.8em;
+		right: 2.8em;
+		width: 3em;
+		height: 3em;
+		background: rgb(40,122,184);*/ /*url('whatever.jpg')*/
+		/*box-shadow: 0 0 2em rgba(255, 255, 255, 1);
+	}
 .luna
 {
 	top: 0;
@@ -192,13 +194,14 @@ div {
 	height: 8em;
 	animation: orbit 2.8s linear infinite;
 }
-.luna::before {
-	top: 0.8em;
-	right: 0.2em;
-	width: 1.2em;
-	height: 1.2em;
-	background: rgb(246,241,213); /*url('whatever.jpg')*/
-}
+	.luna::before {
+		top: 0.8em;
+		right: 0.2em;
+		width: 1.2em;
+		height: 1.2em;
+		background: rgb(246,241,213);*/ /*url('whatever.jpg')*/
+		/*box-shadow: 0 0 2em rgba(255, 255, 255, 1);
+	}
 
 @keyframes orbit {
 	
@@ -206,4 +209,4 @@ div {
 	{
 		transform: rotate(360deg);
 	}
-}
+}*/
