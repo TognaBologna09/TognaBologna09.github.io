@@ -158,6 +158,7 @@ body div {
 		height: auto;
 		transition: transform 0.3s ease-in-out; /* Smooth size change transition */
 		z-index: 0;
+		overflow: hidden;
 	}
 
 	.screenshot-container .description {
@@ -174,6 +175,7 @@ body div {
 		opacity: 0;
 		transition: transform 0.3s ease-in;
 		transition: opacity 0.5s ease-in; /* Smooth opacity transition */
+		overflow:hidden;
 		/*center the text box over the image*/
 	}
 	.highlighted {}
@@ -182,8 +184,8 @@ body div {
 	}
 	.screenshot-container.highlighted img {
 		/* Define styles for highlighted image */
-		border: 5px solid #ff6600; /* Example: Add a border to highlight */
-		box-shadow: 0 0 50px rgba(255, 255, 255, 0.7); /* Example: Add a shadow */
+		border: 10px solid #ffffff; /* Example: Add a border to highlight */
+		/*box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);*/ /* Example: Add a shadow */
 	}
 
 .screenshot-container:hover img{
@@ -198,3 +200,12 @@ body div {
 		transform: scale(1.1);
 		
 	}
+.sign {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	display: flex;
+	text-align: left;
+}
