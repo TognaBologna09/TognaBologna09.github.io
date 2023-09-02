@@ -183,9 +183,7 @@ body div {
 		z-index: 100;
 	}
 	.screenshot-container.highlighted img {
-		/* Define styles for highlighted image */
-		border: 10px solid #ffffff; /* Example: Add a border to highlight */
-		/*box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);*/ /* Example: Add a shadow */
+	
 	}
 
 .screenshot-container:hover img{
