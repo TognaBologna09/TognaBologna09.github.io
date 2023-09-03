@@ -3,6 +3,7 @@ body {
 	background-color: black;
 	height: 100vh;
 	align-items: center;
+	font-size: 1rem;
 }
 h1 
 {
@@ -29,7 +30,7 @@ h3
 p {
 	color: white;
 	font-family: Gill Sans;
-	font-size: 1em;
+	font-size: 2rem;
 }
 @media (min-width: 768px){
 	p{
@@ -43,7 +44,8 @@ nav{
 }
 nav ul {
 	overflow: visible;
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 	padding: 0;
 	list-style: none;
 	display: flex; /* Display the list items in a row */
@@ -59,7 +61,7 @@ nav a {
 	overflow: visible;
 	text-decoration: none;
 	color: white;
-	padding: 10px 20px; /* Add spacing around the links */
+	padding: 2rem; /* Add spacing around the links */
 	transition: background-color 0.3s;
 }
 
@@ -72,6 +74,7 @@ li {
 	font-variant: small-caps;
 	font-size: 18px;
 	display:flex;
+	align-items: center;
 	justify-content: space-around;
 	margin: 0;
 	padding: 0;
@@ -88,6 +91,7 @@ li {
 li:hover .dropdown-content {
 	overflow: visible;
 	display: block;
+	transform: translateY(50%);
 }
 
 .dropdown-content a {
@@ -101,7 +105,8 @@ li:hover .dropdown-content {
 .dropdown-content a:hover {
 	overflow: visible;
 	background-color: #555;
-	transform: translateY(20%);
+	display: flex;
+	
 }
 .center {
 	position: absolute;
@@ -129,18 +134,63 @@ body div {
 }
 *
 {
-	margin: 0;
+	margin-bottom: 0px;
 	padding: 0;
 	box-sizing: border-box;
 }
+/*Styling for image grid on privacy policy page*/
+.grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	max-width: 100%;
+	gap: 20px; /* Adjust the gap as needed */
+	justify-content: left;
+	margin: 10%;	
+}
+.grid-row{
+	width:100%;
+	height: 18%;
+	gap: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
 
+.grid-item{
+	height: auto;
+	width: auto;
+}
+.grid-description-item {
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	margin: 20px;
+}
+
+.grid-item img, grid-description-item img {
+	width: 100px; /* Adjust the width as needed */
+	height: auto;
+	align-items: center;
+	object-fit: cover;
+	grid-area: img;
+}
+
+.grid-item p, grid-description-item p {
+	margin: 0;
+	grid-area: p;
+}
 /*Styling for hover-text image display*/
 
 .app-screenshots {
 	display: flex;
+	
 	flex-direction: column;
 	align-items: center;
 	margin: 5rem;
+	
 }
 
 	.app-screenshots li {
@@ -172,10 +222,12 @@ body div {
 		padding: 10px;
 		text-align: center;
 		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		opacity: 0;
 		transition: transform 0.3s ease-in;
 		transition: opacity 0.5s ease-in; /* Smooth opacity transition */
-		overflow:hidden;
+		overflow: hidden;
 		/*center the text box over the image*/
 	}
 	.highlighted {}
@@ -199,11 +251,11 @@ body div {
 		
 	}
 .sign {
-	position: fixed;
+	position: relative;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	color: white;
-	display: flex;
 	text-align: left;
+	margin-left:20px;
 }
