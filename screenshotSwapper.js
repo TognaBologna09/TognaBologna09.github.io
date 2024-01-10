@@ -9,7 +9,7 @@ let currentIndex = 0;
 window.addEventListener("load", myInit, true); function myInit()
 {
   changeImage(-1, fossilImageArray, fDA, 'fossil-image', 'fossil-description');
-  changeImage(-1, birdImageArray, birdDescriptionArray, 'bird-image', 'bird-description');
+  changeImage(0, birdImageArray, birdDescriptionArray, 'bird-image', 'bird-description');
 };
 
 function changeImage(direction, imageArray, descriptionArray, imageID, descriptionID) {
