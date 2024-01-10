@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+  
+  <!-- This is how you would write comments--> 
+
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GiuffreGaming | Main</title>
+	<link rel="stylesheet" type="text/css" href="newstyles.css">
+	
+</head>
+ 
+<body onload="changeImage(-1, fossilImageArray, fDA, 'fossil-image', 'fossil-description');">
+	
+<nav>
+    <div class ="nav-item" id="nav-item-1">
+    <div class = "brand">
+        <a href="indexV2.html">GiuffreGaming</a>
+    </div>
+    </div>
+    <div class ="nav-item" id="nav-item-2">
+        <a href="#projects">projects </a>
+    </div>
+    <div class ="nav-item" id="nav-item-3">
+        <a href="#about">about </a>
+    </div>
+    <div class ="nav-item" id="nav-item-4">
+        <a href="#connect" id ="connect-button">connect </a>
+    </div>
+</nav>
+  
+<div class ="main">
+
+    <h1 class ="center" id="projects"> - PROJECTS - </h1>
+    
+    <div class="projects-container">
+        
+       
+        <div class="project" id ="fossil-fury">
+            <div  class="project-description-container">
+            
+                <img src="Information-icon-i.png">
+                <p id="fossil-description"></p>
+            </div>
+            
+            <div class="swap-screenshot-button" id="button-left">
+                <button onclick="changeImage(-1, fossilImageArray, fDA, 'fossil-image', 'fossil-description')" type="submit" style="border: 0; background: transparent">
+                <img src ="left_button.png">
+                </button>
+            </div>
+
+            <div class ="screenshot-content" id="fossil-fury">
+                <div class="screenshot-image-wrapper">
+
+                    <img id="fossil-image" src="fossil1.jpg" alt="Slider Image">
+                    
+                </div>
+            </div>
+
+            <div class ="swap-screenshot-button" id="button-right">
+                <button onclick="changeImage(1, fossilImageArray, fDA, 'fossil-image', 'fossil-description')" type="submit" style="border: 0; background: transparent">
+                <img src ="right_button.png">
+                </button>
+            
+            </div>
+            
+            <div class ="project-skills-container">
+            
+                <div class ="project-skills">
+                    <p id="skills">C# - UnityEngine - Blender - GiMP - XCode</p>
+                </div>
+    
+                <div class="project-titles">
+                    <p id="year">2023</p>
+                    <p id="game-title">FOSSIL FURY</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id ="melody-mockingbird">
+            <div  class="project-description-container">
+            
+                <img src="Information-icon-i.png">
+                <p id="bird-description"></p>
+            </div>
+            
+            <div class="swap-screenshot-button" id="button-left">
+                <button onclick="changeImage(-1, birdImageArray, birdDescriptionArray, 'bird-image', 'bird-description')" type="submit" style="border: 0; background: transparent">
+                <img src ="left_button.png">
+                </button>
+            </div>
+
+            <div class ="screenshot-content" id="melody-mockingbird">
+                <div class="screenshot-image-wrapper">
+
+                    <img id="bird-image" src="IMGmain.PNG" alt="Slider Image">
+                    
+                </div>
+            </div>
+
+            <div class ="swap-screenshot-button" id="button-right">
+                <button onclick="changeImage(1, birdImageArray, birdDescriptionArray, 'bird-image', 'bird-description')" type="submit" style="border: 0; background: transparent">
+                <img src ="right_button.png">
+                </button>
+            
+            </div>
+            
+            <div class ="project-skills-container">
+            
+                <div class ="project-skills">
+                    <p id="skills">C# - UnityEngine - GiMP - XCode</p>
+                </div>
+    
+                <div class="project-titles">
+                    <p id="year">2023</p>
+                    <p id="game-title">MELODY MOCKINGBIRD</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div class ="about-container">
+        <h1 class="center" id = "about"> - ABOUT ME -</h1>
+
+        <div class ="grid-container">
+        <div class ="grid-child" id = "profile">
+            <img src = "AnthonyGiuffreProfile.jpg">
+        </div>
+
+        <div class ="grid-child child-2">
+            <div class ="grid-grandchild">
+                <h3>Who am I?</h3>
+                <p>
+                I am a skilled and motivated programmer, artist, and designer based in Frederick, Maryland.
+                </p>
+                <p>
+                    I create mobile games for iOS that engage gamers of all ages and deliver players a satisfying mobile gaming experience.
+                </p>
+            
+                <p>
+                    I enjoy spending my time with close friends playing games like Fortnite, 
+                    Rocket League, Minecraft, and Rust. You can otherwise find me at a climbing gym or at my piano!
+                </p>
+            </div>
+        </div>
+        </div>
+        <h1 class="center" id="skills">- SKILLS -</h1>
+        <div class ="grid-container" id="skills-container">
+        
+            <div class ="grid-child" id="background">
+                <h3>my background.</h3>
+                <p>I have a degree in Astrophysics (Go Terps!), and pursuing that education gave me fantastic problem solving abilities. I  apply myself in many areas, and teach myself new skills to help me realize my potential as a perpetual learner.
+                </p>
+            </div>
+        
+            <div class ="grid-child" id="skills">
+                <h2>Software Engineering</h2>
+                <h2>Web Dev.</h2>
+                <h2>UI/UX Design</h2>
+                <h2>3D & 2D Modeling</h2>
+                <h2>Prototyping</h2>
+            </div>
+            <div class ="grid-child" id="toolbox">
+                <h3>my digital toolbox.</h3>
+                <p>These tools are fundamental to my software development workflow. I am always learning more  about my tech stack, and love to explore new software that could help my productivity.
+                </p>
+            </div>
+            <div class ="grid-child" id="skills">
+                <h2>C#</h2>
+                <h2>Python</h2>
+                <h2>Javascript</h2>
+                <h2>HTML</h2>
+                <h2>CSS</h2>
+                <h2>Unity Game Engine</h2>
+                <h2>Blender</h2>
+                
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="connect-container">
+        <h1 class="center" id="connect">- CONTACT -</h1>
+        <div class="socials">
+            <h3><br><br><br>I am currently looking for work. <br>Let's connect!</h3>
+            <h4>my socials.</h4>
+            <ul>
+                <li><img src ='email_logo.png'><a href="mailto: awgiuffre@gmail.com">awgiuffre@gmail.com</a></li>
+                <li><img src ='linkedin_logo.png'><a href = "https://www.linkedin.com/in/anthony-w-giuffre/">linkedin.com/in/anthony-w-giuffre</a></li>
+                <li><img src ='github_logo.png'><a href ="https://github.com/TognaBologna09">github.com/TognaBologna09</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright-container">
+        <p id="year"><img src ="copyright_logo.png"> 2023 </p>
+        <p id="signature"> Anthony Giuffre</p>
+    </div>
+</div>
+<script src="screenshotSwapper.js"></script>
+</body>
+</html>
